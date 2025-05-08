@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "577258623799",
+    "firebase_url": "https://musicapp-2837e-default-rtdb.firebaseio.com",
+    "project_id": "musicapp-2837e",
+    "storage_bucket": "musicapp-2837e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577258623799:android:f493d667875d83b268c0b2",
+        "android_client_info": {
+          "package_name": "com.medium.music"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWeX-FJzQZMwpHhcet-QyMUsNIcs27o0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
