@@ -15,7 +15,7 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="@dimen/define_dimen_120"
             android:layout_height="@dimen/define_dimen_120"
-            android:src="@drawable/img_splash" />
+            android:src="@drawable/logointromusic" />
 
         <TextView
             android:id="@+id/tv_about_us_title"
@@ -33,28 +33,7 @@
             android:gravity="center"
             android:textSize="@dimen/text_size_small" />
 
-        <LinearLayout
-            android:id="@+id/layout_website"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/define_dimen_10"
-            android:padding="@dimen/define_dimen_2"
-            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_about_us_website"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/blue"
-                android:textStyle="bold"
-                android:textSize="@dimen/text_size_small" />
-
-            <View
-                android:layout_width="match_parent"
-                android:background="@color/blue"
-                android:layout_height="1dp"/>
-
-        </LinearLayout>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

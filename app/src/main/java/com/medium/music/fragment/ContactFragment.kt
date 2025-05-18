@@ -27,14 +27,14 @@ class ContactFragment : Fragment() {
     ): View? {
         mFragmentContactBinding = FragmentContactBinding.inflate(inflater, container, false)
         initUi()
-        initListener()
+
         return mFragmentContactBinding?.root
     }
 
     private fun initUi() {
         mFragmentContactBinding?.tvAboutUsTitle?.text = AboutUsConfig.ABOUT_US_TITLE
         mFragmentContactBinding?.tvAboutUsContent?.text = AboutUsConfig.ABOUT_US_CONTENT
-        mFragmentContactBinding?.tvAboutUsWebsite?.text = AboutUsConfig.ABOUT_US_WEBSITE_TITLE
+
         mContactAdapter = ContactAdapter(activity, getListContact(), object : ContactAdapter.ICallPhone {
             override fun onClickCallPhone() {
                 GlobalFunction.callPhoneNumber(activity)
@@ -47,13 +47,7 @@ class ContactFragment : Fragment() {
         mFragmentContactBinding?.rcvData?.adapter = mContactAdapter
     }
 
-    private fun initListener() {
-        mFragmentContactBinding?.layoutWebsite?.setOnClickListener {
-            startActivity(
-                Intent(Intent.ACTION_VIEW, Uri.parse(AboutUsConfig.WEBSITE))
-            )
-        }
-    }
+
 
     private fun getListContact(): List<Contact> {
         val contactArrayList: MutableList<Contact> = ArrayList()
